@@ -75,7 +75,7 @@
 
 링크를 카카오톡 등에 공유하면 제목, 설명, 대표 이미지(`files/preview.png`, 1200×630)가 보이도록 `index.html` 맨 위(`<head>`)에 미리보기 정보(`og:`·`twitter:` 태그)를 넣어 두었습니다.
 
-- **공개 주소로 바꾸기(필수)**: 이미지 주소는 전체 주소여야 해서 지금은 임시 주소 `https://portal.example.com`으로 들어 있습니다. 포털을 올릴 실제 주소가 정해지면 `index.html`에서 `https://portal.example.com`을 4곳(`og:url`, `og:image`, `twitter:image`와 주석) 모두 실제 주소로 바꿉니다. 예: `https://실제주소/files/preview.png`
+- **공개 주소**: 현재 `https://ahjin-kim.github.io/dept-portal/`로 지정되어 있습니다(`og:url`, `og:image`, `twitter:image`). 이미지 주소는 전체 주소여야 하므로 `https://ahjin-kim.github.io/dept-portal/files/preview.png`를 사용합니다. 포털 주소가 바뀌면 `index.html`의 이 3곳과 주석을 새 주소로 바꿉니다.
 - **올라가야 보입니다**: 카카오톡 등은 인터넷에서 열리는 주소(`https://`)만 읽어 갑니다. 내 컴퓨터의 파일이나 사내망 주소는 미리보기가 나타나지 않습니다. `index.html`과 `files/preview.png`를 함께 올려야 합니다.
 - **이미 공유한 주소는 안 바뀔 수 있음**: 카카오톡은 한 번 읽은 미리보기를 저장해 둡니다. 내용을 바꿨는데 그대로라면 카카오 개발자 사이트의 「공유 디버거」에서 해당 주소의 캐시를 지우세요.
 - **내용 바꾸기**: 제목·설명은 `og:title`, `og:description`, `description`, 이미지는 `files/preview.png` 파일을 같은 크기(1200×630)로 교체합니다.
